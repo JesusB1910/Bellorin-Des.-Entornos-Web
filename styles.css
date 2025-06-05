@@ -1,0 +1,237 @@
+/* =======================
+   General Styles
+   ======================= */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafbfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header - Navegación */
+header {
+    background-color: #eeeeee;
+    color: #333;
+    padding: 10px 20px;
+    width: 100%;
+    border-style: solid;
+    border-color: #eeeeee;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre el logo y la navegación */
+    align-items: center;
+    max-width: 1200px; /* O el ancho máximo que prefieras */
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+header nav {
+    margin-left: auto; /* Empuja la navegación hacia la derecha */
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #ccc;
+    color: #01122c;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Añade una transición suave al hover */
+}
+
+header nav ul li a:hover {
+    background-color: #aaa;
+}
+
+/* =======================
+   Main Section - Home
+   ======================= */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+
+/* Alineación de los textos y botones dentro de la imagen */
+.main-text {
+    position: absolute;
+    bottom: 20px; /* Coloca el contenedor principal cerca de la parte inferior */
+    left: 155px; /* Alineado al margen izquierdo */
+    color: white;
+    text-align: left;
+    width: calc(80% - 40px); /* Ajusta el ancho para seguir el tamaño de la imagen */
+    height: 200px;
+}
+
+.main-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.main-text p {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.blue-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.blue-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* =======================
+   Articles Section - Home
+   ======================= */
+section {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-left: 10%;
+    margin-top: -100px;
+}
+
+section div {
+    text-align: center;
+    width: 150px;
+}
+
+section div img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+section div h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #363636;
+}
+
+
+/* =======================
+   Footer
+   ======================= */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* =======================
+   Estilos para Sección de Descargas f9f9f9
+   ======================= */
+
+   .download-section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+}
+
+.download-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.download-text {
+    flex: 1;
+    text-align: left;
+}
+
+.download-text h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #242323;
+    margin-bottom: 10px;
+}
+
+.download-text p {
+    color: #464545;
+    margin-bottom: 20px;
+}
+
+.download-button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #007bff;
+    border: solid;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.download-button:hover {
+    background-color: #007bff;
+    color: #f4f4f4;
+}
+
+.download-image {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px; /* Espacio entre texto y imagen */
+}
